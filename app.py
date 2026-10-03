@@ -16,3 +16,6 @@ st.title("🖼️ CIFAR-10 Image Classifier")
 st.write("Upload an image and let the CNN predict its category.")
 
 model = CNN()
+
+## Load The Model
+model.load_state_dict(torch.load("best_model.pth",map_location = "cpu"))
