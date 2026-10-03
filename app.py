@@ -22,3 +22,17 @@ model.load_state_dict(torch.load("best_model.pth",map_location = "cpu"))
 
 ## Evaluation mode
 model.eval()
+
+
+classes = [
+    "airplane",
+    "automobile",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+]
