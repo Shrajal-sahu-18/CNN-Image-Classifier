@@ -60,3 +60,7 @@ if uploaded_image is not None:
         caption = "Uploaded Image",
         width = 300
     )
+    # Convert Image To Tensor
+    image_tensor = transform(image)
+
+    image_tensor = image_tensor.unsqueeze(0)
