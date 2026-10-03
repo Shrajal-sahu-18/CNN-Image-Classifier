@@ -51,3 +51,7 @@ uploaded_image = st.file_uploader(
     "📤 Upload an image",
     type = ["jpg","jpeg","png","webp"]
 )
+
+if uploaded_image is not None:
+
+    image = Image.open(uploaded_image).convert("RGB")
