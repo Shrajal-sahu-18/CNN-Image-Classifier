@@ -64,3 +64,20 @@ if uploaded_image is not None:
     image_tensor = transform(image)
 
     image_tensor = image_tensor.unsqueeze(0)
+
+    with torch.no_grad():
+            outputs = model(image_tensor)
+
+            predicted_class =torch.argmax(outputs,dim=1).item()
+
+            predicted_label = classes[predicted_class]
+
+            probabilities = torch.softmax(outputs,dim = 1)
+
+            confidence = probabilities[0][predicted_class].item()
+
+            st.success(f"Prediction :{predicted_label}")
+            st.metric(
+                "Confidence",
+                f"{confidence * 100:.2f}%"
+            )
