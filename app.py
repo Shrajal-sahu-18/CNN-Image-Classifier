@@ -11,3 +11,5 @@ st.set_page_config(
     layout = "centered"
 
 )
+
+st.title("🖼️ CIFAR-10 Image Classifier")
