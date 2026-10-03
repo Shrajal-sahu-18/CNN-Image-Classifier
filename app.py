@@ -55,3 +55,8 @@ uploaded_image = st.file_uploader(
 if uploaded_image is not None:
 
     image = Image.open(uploaded_image).convert("RGB")
+    st.image(
+        image,
+        caption = "Uploaded Image",
+        width = 300
+    )
