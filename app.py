@@ -13,3 +13,4 @@ st.set_page_config(
 )
 
 st.title("🖼️ CIFAR-10 Image Classifier")
+st.write("Upload an image and let the CNN predict its category.")
