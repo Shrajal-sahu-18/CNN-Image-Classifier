@@ -36,3 +36,5 @@ classes = [
     "ship",
     "truck"
 ]
+
+st.info( "Supported Categories: " + ", ".join(classes) )
