@@ -396,6 +396,10 @@ Some possible improvements for this project:
 
 Aspiring **ML / GenAI & Backend Developer**
 
+## 👩‍🏫Teacher
+
+**Shradha Khapra Maam**
+
 ### Skills & Interests
 
 * Machine Learning
